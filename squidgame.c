@@ -48,10 +48,6 @@ static int * squidGame(int trials, int players, int steps, float probability_eac
                     }
                     knowledge[step_counter]=1;
                 }
-                else
-                {
-                    step_counter++;
-                }
                 step_counter++;
             }
             if(alive==false)
