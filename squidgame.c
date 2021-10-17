@@ -102,7 +102,7 @@ static int * squidGame(int trials, int players, int steps, float probability_eac
         while(i<(players+1))
         {
             float odds=(float)number_of_times_n_survived[i]/(float)trials;//i'm paranoid ok?
-            printf("Number of times %d players survived | %d | Probability: %f",i,number_of_times_n_survived[i],odds);
+            printf("Number of times %d players survived | %d | Probability: %f\n",i,number_of_times_n_survived[i],odds);
             i++;
         
         }
