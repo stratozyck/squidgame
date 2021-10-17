@@ -16,7 +16,7 @@ static bool binaryOutcomeGivenProbability(float probability)
 }
 
 
-static int * squidGameDiversion(int trials, int players, int steps, float probability_each_step)
+static int * squidGame(int trials, int players, int steps, float probability_each_step)
 {
     if((trials<=0) || (players<=0) || (steps <=0) || (probability_each_step<0) || (probability_each_step>1))
     { return (NULL);}
@@ -93,4 +93,24 @@ static int * squidGameDiversion(int trials, int players, int steps, float probab
     if(total_survivors!=nil){free(total_survivors);total_survivors=nil;}
     return (summary_vec_times_n_players_survived);
     
+}
+
+-(void)main
+{
+    int players = 16, steps = 18, trials = 1000000;
+    int *number_of_times_n_survived = squidGame(trials,players,steps,.5);
+    
+    if(number_of_times_n_survived!=nil)
+    {
+        int i=0;
+        while(i<(players+1))
+        {
+            float odds=(float)number_of_times_n_survived[i]/(float)trials;//i'm paranoid ok?
+            printf("Number of times %d players survived | %d | Probability: %f",i,number_of_times_n_survived[i],odds);
+            i++;
+        
+        }
+        free(number_of_times_n_survived);number_of_times_n_survived=NULL;
+        return;
+    }
 }
