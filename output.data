@@ -1,17 +1,18 @@
-0	players	survived	0	Probability	0.000000
-1	players	survived	0	Probability	0.000000
-2	players	survived	0	Probability	0.000000
-3	players	survived	0	Probability	0.000000
-4	players	survived	0	Probability	0.000000
-5	players	survived	0	Probability	0.000000
-6	players	survived	0	Probability	0.000000
-7	players	survived	74646	Probability	0.074646
-8	players	survived	225247	Probability	0.225247
-9	players	survived	301031	Probability	0.301031
-10	players	survived	233302	Probability	0.233302
-11	players	survived	117067	Probability	0.117067
-12	players	survived	38891	Probability	0.038891
-13	players	survived	8530	Probability	0.008530
-14	players	survived	1185	Probability	0.001185
-15	players	survived	98	Probability	0.000098
-16	players	survived	3	Probability	0.000003
+Survived	Count	Probability	Fallen
+0	0	        0.000000	16
+1	0	       0.000000 	15
+2	0	       0.000000 	14
+3	0	       0.000000	  13
+4	0	        0.000000	12
+5	0	         0.000000	11
+6	0	         0.000000	10
+7	74646	     0.074646	9
+8	225247	  0.225247	8
+9	301031	  0.301031	7
+10	233302	0.233302	6
+11	117067	0.117067	5
+12	38891 	0.038891	4
+13	8530  	0.008530	3
+14	1185  	0.001185	2
+15	98	    0.000098	1
+16	3 	    0.000003	0
