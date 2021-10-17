@@ -1,3 +1,21 @@
+static bool binaryOutcomeGivenProbability(float probability)
+{
+    if(probability<=0){return(false);}
+    if(probability>=1){return(true);}
+    int size_of_random = 10000;
+    int value = arc4random_uniform(size_of_random);
+    bool outcome = false;
+    int conversion_of_probability=0;
+    float conversion_float = probability*size_of_random;
+    conversion_of_probability = floor(conversion_float);
+    if(value<=conversion_of_probability)
+    {
+        outcome=true;
+    }
+    return(outcome);
+}
+
+
 static int * squidGameDiversion(int trials, int players, int steps, float probability_each_step)
 {
     if((trials<=0) || (players<=0) || (steps <=0) || (probability_each_step<0) || (probability_each_step>1))
